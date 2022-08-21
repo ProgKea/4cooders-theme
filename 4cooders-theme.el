@@ -14,9 +14,7 @@
       (4cooders-bg+2      "#323232")
       (4cooders-bg+3      "#484848")
       (4cooders-bg+4      "#52494e")
-      (4cooders-red-1     "#130707")
       (4cooders-red       "#ff0000")
-      (4cooders-red+1     "#ff0000")
       (4cooders-green     "#50FF30")
       (4cooders-orange    "#D08F20")
       (4cooders-blue      "#3C57DC")
@@ -77,7 +75,7 @@
    `(compilation-warning ((t ,(list :foreground 4cooders-blue
                                     :bold t
                                     :inherit 'unspecified))))
-   `(compilation-error ((t (:foreground ,4cooders-red+1))))
+   `(compilation-error ((t (:foreground ,4cooders-red))))
    `(compilation-mode-line-fail ((t ,(list :foreground 4cooders-red
                                            :weight 'bold
                                            :inherit 'unspecified))))
@@ -89,7 +87,7 @@
    `(custom-state ((t (:foreground ,4cooders-green))))
 
    ;; Diff
-   `(diff-removed ((t ,(list :foreground 4cooders-red+1
+   `(diff-removed ((t ,(list :foreground 4cooders-red
                              :background nil))))
    `(diff-added ((t ,(list :foreground 4cooders-green
                            :background nil))))
@@ -120,8 +118,8 @@
    ;; ERC
    `(erc-notice-face ((t (:foreground ,4cooders-orange))))
    `(erc-timestamp-face ((t (:foreground ,4cooders-green))))
-   `(erc-input-face ((t (:foreground ,4cooders-red+1))))
-   `(erc-my-nick-face ((t (:foreground ,4cooders-red+1))))
+   `(erc-input-face ((t (:foreground ,4cooders-red))))
+   `(erc-my-nick-face ((t (:foreground ,4cooders-red))))
 
    ;; EShell
    `(eshell-ls-backup ((t (:foreground ,4cooders-orange))))
@@ -136,13 +134,13 @@
    `(font-lock-constant-face ((t (:foreground ,4cooders-orange))))
    `(font-lock-doc-face ((t (:foreground ,4cooders-green))))
    `(font-lock-doc-string-face ((t (:foreground ,4cooders-green))))
-   `(font-lock-function-name-face ((t (:foreground ,4cooders-orange))))
+   `(font-lock-function-name-face ((t (:foreground ,4cooders-fg))))
    `(font-lock-keyword-face ((t (:foreground ,4cooders-orange :bold t))))
    `(font-lock-preprocessor-face ((t (:foreground ,4cooders-orange))))
    `(font-lock-reference-face ((t (:foreground ,4cooders-orange))))
    `(font-lock-string-face ((t (:foreground ,4cooders-green))))
    `(font-lock-type-face ((t (:foreground ,4cooders-orange))))
-   `(font-lock-variable-name-face ((t (:foreground ,4cooders-fg+1))))
+   `(font-lock-variable-name-face ((t (:foreground ,4cooders-fg))))
    `(font-lock-warning-face ((t (:foreground ,4cooders-red))))
 
    ;; Flymake
@@ -233,7 +231,7 @@
    `(magit-branch ((t (:foreground ,4cooders-orange))))
    `(magit-diff-hunk-header ((t (:background ,4cooders-bg+2))))
    `(magit-diff-file-header ((t (:background ,4cooders-bg+4))))
-   `(magit-log-sha1 ((t (:foreground ,4cooders-red+1))))
+   `(magit-log-sha1 ((t (:foreground ,4cooders-red))))
    `(magit-log-author ((t (:foreground ,4cooders-blue))))
    `(magit-log-head-label-remote ((t ,(list :foreground 4cooders-green
                                             :background 4cooders-bg+1))))
@@ -268,7 +266,7 @@
    `(org-column ((t (:background ,4cooders-bg-1))))
    `(org-column-title ((t (:background ,4cooders-bg-1 :underline t :weight bold))))
    `(org-done ((t (:foreground ,4cooders-green))))
-   `(org-todo ((t (:foreground ,4cooders-red-1))))
+   `(org-todo ((t (:foreground ,4cooders-red))))
    `(org-upcoming-deadline ((t (:foreground ,4cooders-orange))))
 
    ;; Search
@@ -281,11 +279,11 @@
                                        :background 4cooders-orange))))
 
    ;; Sh
-   `(sh-quoted-exec ((t (:foreground ,4cooders-red+1))))
+   `(sh-quoted-exec ((t (:foreground ,4cooders-red))))
 
    ;; Show Paren
    `(show-paren-match-face ((t (:background ,4cooders-bg+4))))
-   `(show-paren-mismatch-face ((t (:background ,4cooders-red-1))))
+   `(show-paren-mismatch-face ((t (:background ,4cooders-red))))
 
    ;; Slime
    `(slime-repl-inputed-output-face ((t (:foreground ,4cooders-red))))
@@ -312,7 +310,7 @@
    `(whitespace-hspace ((t ,(list :background 4cooders-bg
                                   :foreground 4cooders-bg+2))))
    `(whitespace-line ((t ,(list :background 4cooders-bg+2
-                                :foreground 4cooders-red+1))))
+                                :foreground 4cooders-red))))
    `(whitespace-newline ((t ,(list :background 4cooders-bg
                                    :foreground 4cooders-bg+2))))
    `(whitespace-trailing ((t ,(list :background 4cooders-red
